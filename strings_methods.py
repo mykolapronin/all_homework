@@ -5,6 +5,7 @@ which_dish = input(MSG_INPUT_WHICH_DISH).title().strip()
 
 recipe = input(MSG_INPUT_RECIPE).title()
 
+
 header = 50 * '~'
 footer = 50 * '~'
 print(header)
