@@ -5,6 +5,7 @@ taxi_out = taxi_to * 1.2
 taxi_trip = taxi_out + taxi_to
 
 pizza = 250 * 2
+
 pizza_discount = pizza * 0.85
 
 air_hockey = 8 * 80
