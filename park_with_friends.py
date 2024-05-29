@@ -1,3 +1,4 @@
+# Відпочинок з друзями
 people = 4
 
 ticket = 500 * people
