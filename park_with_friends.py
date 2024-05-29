@@ -1,5 +1,7 @@
-# people = 4
-ticket = 500
+people = 4
+
+ticket = 500 * people
+
 taxi_to = 600
 taxi_out = taxi_to * 1.2
 taxi_trip = taxi_out + taxi_to
