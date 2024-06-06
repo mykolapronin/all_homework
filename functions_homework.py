@@ -10,9 +10,9 @@ def welcome_user(user_name):
 # print(nickname)
 
 
-def area_of_rectangle(multiplier, multiplied):
-    result = multiplier * multiplied
+def counting_area_of_rectangle(first_diagonal, second_diagonal):
+    result = first_diagonal * second_diagonal
     return result
 
-# s = area_of_rectangle(6, 4)
+# s = counting_area_of_rectangle(6, 4)
 # print(s)
