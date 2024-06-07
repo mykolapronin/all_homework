@@ -4,7 +4,6 @@ from pywebio.output import put_text, put_html, put_image
 from pywebio import start_server
 from pywebio.session import run_js
 
-MSG_WELCOME = 'Вітаємо на супер-квізі!'
 MSG_THANKS = "Дякуємо за участь!"
 
 
