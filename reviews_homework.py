@@ -19,14 +19,14 @@ def main():
     name = input_pw("Введіть ваше ім'я", required=True)
     film_name = input_pw("Введіть назву фільму", required=True)
     film_genre = select("Виберіть жанр фільму", options=genre_options)
-    short_review = input_pw('Напишіть короткий відгук')
+    short_review = textarea('Напишіть короткий відгук')
     film_rating = slider('Яка ваша оцінка до фільму', min_value=1, max_value=10)
     your_emotions = checkbox('Які були ваші емоції після перегляду', options=emotions)
     recomendation = radio('Чи рекомендуєте цей фільм іншим', options=['Так', 'Ні'])
     if film_rating == 10 or film_rating == 9 or film_rating == 8:
         put_success('Дякуємо за оцінку!')
 
-    reviews_info.append(['name', 'film_name', 'film_genre', 'short_review', 'film_rating', 'your_emotions', 'recomendation'])
+    reviews_info.append([name, film_name, film_genre, short_review, film_rating, your_emotions, recomendation])
     run_js('setTimeout(function(){location.reload();}, 4000)')
 
 
