@@ -39,13 +39,13 @@ students = {
 from pprint import pprint
 from decimal import Decimal
 
-students = {
-    'Марго Шаркова': {
+students['Марго Шаркова'] = {
+
         'Пошта': 'margarita2006@gmail.com',
         'Вік': 17,
         'Номер телефону': '+380990567654',
         'Середній бал': 97.2
-    }
+
 }
 
 key, value, *other = students
