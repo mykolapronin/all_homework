@@ -39,11 +39,13 @@ students = {
 from pprint import pprint
 from decimal import Decimal
 
-students['Маргарита Шаркова'] = {
-    'Пошта': 'margarita2006@gmail.com',
-    'Вік': 17,
-    'Номер телефону': '+380990567654',
-    'Середній бал': 97.2
+students = {
+    'Марго Шаркова': {
+        'Пошта': 'margarita2006@gmail.com',
+        'Вік': 17,
+        'Номер телефону': '+380990567654',
+        'Середній бал': 97.2
+    }
 }
 
 key, value, *other = students
@@ -55,7 +57,7 @@ for key, value in students.items():
         list_of_students.append([key, students[key]['Середній бал']])
     average_score += students[key]['Середній бал']
     if not students[key]['Номер телефону']:
-            students[key]['Номер телефону батьків'] = '+38066089574'
+        students[key]['Номер телефону батьків'] = '+38066089574'
 print(list(list_of_students))
 
 if students:
