@@ -1,12 +1,13 @@
 import requests
 
-url = 'https://dummyjson.com/users?limit=300'
+url = 'https://dummyjson.com/users'
 
 list_of_twenty_eight_years_old_users = []
 
 
 def get_user_name_by_age(age: int = 28):
-    response = requests.get(url=url)
+    params = {"limit": 300}
+    response = requests.get(url=url, params=params)
     response_json = response.json()
     users = response_json['users']
     for user in users:
@@ -15,5 +16,5 @@ def get_user_name_by_age(age: int = 28):
     return list_of_twenty_eight_years_old_users
 
 
-start_function_get_username = get_user_name_by_age()
-print(start_function_get_username)
+start_function = get_user_name_by_age()
+print(start_function)
